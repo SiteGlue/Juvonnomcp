@@ -1,0 +1,1 @@
+web: python mcp_heroku_server.py
