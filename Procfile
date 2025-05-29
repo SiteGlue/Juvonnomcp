@@ -1,1 +1,1 @@
-web: python mcp_heroku_server.py
+web: uvicorn mcp_heroku_server:app --host 0.0.0.0 --port $PORT
