@@ -1,0 +1,28 @@
+{
+  "name": "Juvonno MCP Server",
+  "description": "MCP server for Juvonno appointment scheduling API integration with Vapi",
+  "image": "heroku/python",
+  "repository": "https://github.com/your-username/juvonno-mcp-server",
+  "keywords": ["mcp", "juvonno", "appointments", "healthcare", "vapi"],
+  "env": {
+    "JUVONNO_API_KEY": {
+      "description": "Your Juvonno API key for authentication",
+      "required": false
+    },
+    "JUVONNO_SUBDOMAIN": {
+      "description": "Your Juvonno subdomain (e.g., medrehabgroup)",
+      "required": false
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
